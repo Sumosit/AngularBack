@@ -28,7 +28,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/gs-guide-websocket")
-                .setAllowedOrigins("http://localhost:4200")
+                .setAllowedOrigins("http://localhost:4200", "https://profile-urobylbiul.herokuapp.com")
                 .withSockJS();
     }
 
